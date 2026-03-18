@@ -1,0 +1,27 @@
+{
+  "name": "erc3643-deploy-scripts",
+  "version": "1.0.0",
+  "description": "Hardhat deployment scripts for ERC-3643 compliant security tokens",
+  "scripts": {
+    "deploy:local": "hardhat run scripts/hardhat/deploy-all.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/hardhat/deploy-all.js --network sepolia",
+    "deploy:mumbai": "hardhat run scripts/hardhat/deploy-all.js --network mumbai",
+    "deploy:base-sepolia": "hardhat run scripts/hardhat/deploy-all.js --network base-sepolia",
+    "test": "hardhat test",
+    "node": "hardhat node"
+  },
+  "dependencies": {
+    "@tokenysolutions/t-rex": "^4.1.0",
+    "@onchain-id/solidity": "^2.1.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.14.0",
+    "mocha": "^10.2.0"
+  }
+}
