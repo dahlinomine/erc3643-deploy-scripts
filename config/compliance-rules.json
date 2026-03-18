@@ -1,0 +1,46 @@
+{
+  "modules": {
+    "MaxBalanceModule": {
+      "description": "Cap token holdings per wallet address",
+      "params": {
+        "maxBalance": 1000000
+      }
+    },
+    "CountryRestrictModule": {
+      "description": "Block transfers to/from wallets registered in restricted countries",
+      "params": {
+        "restrictedCountries": [364, 408, 760],
+        "note": "Country codes per ISO 3166-1 numeric: 364=Iran, 408=North Korea, 760=Syria"
+      }
+    },
+    "TransferFeesModule": {
+      "description": "Collect a basis-point fee on each token transfer",
+      "params": {
+        "feeBps": 50,
+        "feeCollector": "0x0000000000000000000000000000000000000000"
+      }
+    },
+    "SupplyLimitModule": {
+      "description": "Cap the total token supply",
+      "params": {
+        "supplyLimit": 100000000
+      }
+    },
+    "TimeExchangeLimitsModule": {
+      "description": "Limit the volume transferable to exchanges within a time window",
+      "params": {
+        "exchangeLimit": {
+          "limitTime": 86400,
+          "limitValue": 10000
+        }
+      }
+    }
+  },
+  "claimTopics": {
+    "1": "KYC",
+    "2": "AML",
+    "3": "Accredited Investor",
+    "4": "Professional Investor",
+    "5": "Country of Residence"
+  }
+}
