@@ -1,0 +1,31 @@
+{
+  "localhost": {
+    "chainId": 31337,
+    "rpcUrl": "http://127.0.0.1:8545"
+  },
+  "sepolia": {
+    "chainId": 11155111,
+    "rpcUrl": "${SEPOLIA_RPC_URL}",
+    "explorer": "https://sepolia.etherscan.io"
+  },
+  "polygon": {
+    "chainId": 137,
+    "rpcUrl": "${POLYGON_RPC_URL}",
+    "explorer": "https://polygonscan.com"
+  },
+  "mumbai": {
+    "chainId": 80001,
+    "rpcUrl": "${MUMBAI_RPC_URL}",
+    "explorer": "https://mumbai.polygonscan.com"
+  },
+  "base": {
+    "chainId": 8453,
+    "rpcUrl": "${BASE_RPC_URL}",
+    "explorer": "https://basescan.org"
+  },
+  "base-sepolia": {
+    "chainId": 84532,
+    "rpcUrl": "${BASE_SEPOLIA_RPC_URL}",
+    "explorer": "https://sepolia.basescan.org"
+  }
+}
